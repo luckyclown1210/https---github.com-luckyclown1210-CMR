@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <meta content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <title>
+            Jesdo - Responsive Multipurpose Template
+        </title>
+        <!--  Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Raleway:400,800,500,600,300,700" rel="stylesheet" type="text/css" />
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+        <!--  Styles CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/animate.css" rel="stylesheet" />
+        <!--  HTML5 shim and Respond.js IE8 support of HTML5 elements and media
+          queries -->
+        <!--  [if lt IE 9]> <script
+          src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script
+          src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+          <![endif] -->
+         <style>
+            .rtable {
+                display: inline;
+                vertical-align: top;
+                max-width: 100%;
+                overflow-x: auto;
+
+                // optional - looks better for small cell values
+                white-space: nowrap;
+
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+
+            .rtable,
+            .rtable--flip tbody {
+                // optional - enable iOS momentum scrolling
+                -webkit-overflow-scrolling: touch;
+
+                // scrolling shadows
+                background: radial-gradient(left, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 0 center,
+                    radial-gradient(right, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 100% center;
+                background-size: 10px 100%, 10px 100%;
+                background-attachment: scroll, scroll;
+                background-repeat: no-repeat;
+            }
+
+            // change these gradients from white to your background colour if it differs
+            // gradient on the first cells to hide the left shadow
+            .rtable td:first-child,
+            .rtable--flip tbody tr:first-child {
+                background-image: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+                background-repeat: no-repeat;
+                background-size: 20px 100%;
+            }
+
+            // gradient on the last cells to hide the right shadow
+            .rtable td:last-child,
+            .rtable--flip tbody tr:last-child {
+                background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+                background-repeat: no-repeat;
+                background-position: 100% 0;
+                background-size: 20px 100%;
+            }
+
+            .rtable th {
+                font-size: 11px;
+                text-align: left;
+                text-transform: uppercase;
+                background: #f2f0e6;
+            }
+
+            .rtable th,
+            .rtable td {
+                padding: 6px 12px;
+                border: 1px solid #d9d7ce;
+            }
+            .rtable--flip {
+                display: flex;
+                overflow: hidden;
+                background: none;
+            }
+
+            .rtable--flip thead {
+                display: flex;
+                flex-shrink: 0;
+                min-width: min-content;
+            }
+
+            .rtable--flip tbody {
+                display: flex;
+                position: relative;
+                overflow-x: auto;
+                overflow-y: hidden;
+            }
+
+            .rtable--flip tr {
+                display: flex;
+                flex-direction: column;
+                min-width: min-content;
+                flex-shrink: 0;
+            }
+
+            .rtable--flip td,
+            .rtable--flip th {
+                display: block;
+            }
+
+            .rtable--flip td {
+                background-image: none !important;
+                // border-collapse is no longer active
+                border-left: 0;
+            }
+
+            // border-collapse is no longer active
+            .rtable--flip th:not(:last-child),
+            .rtable--flip td:not(:last-child) {
+                border-bottom: 0;
+            }
+
+            /*!
+            // CodePen house keeping
+            */
+
+            body {
+                margin: 0;
+                padding: 25px;
+                color: #494b4d;
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            h1, h2, h3 {
+                margin: 0 0 10px 0;
+                color: #1d97bf;
+            }
+
+            h1 {
+                font-size: 25px;
+                line-height: 30px;
+            }
+
+            h2 {
+                font-size: 20px;
+                line-height: 25px;
+            }
+
+            h3 {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            table {
+                margin-bottom: 30px;
+            }
+
+            a {
+                color: #ff6680;
+            }
+
+            code {
+                background: #fffbcc;
+                font-size: 12px;
+            }
+            .input-text{
+                width: 50px;
+            }
+            .tbl1{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .tbl2{
+                margin-bottom: 20px;
+            }
+            .tbl3{
+                margin-bottom: 20px;
+            }
+            .rtable table thead #smallTh{
+                width: 50px;
+            }
+            .tbl2 .rtable input{
+                width: 100px;
+            }
+            .tbl3 .rtable input{
+                width: 70px;
+            }
+        </style>
+        
+        
+    </h:head>
+    <h:body>
+        <ui:insert name="header" >
+            <ui:include src="/template/navBar.xhtml" />
+        </ui:insert>
+
+
+        <div class="pages-header-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="pages-header">
+                            <h3 class="title-un">
+                                <a href="#">Write Report</a>
+                            </h3>
+                            <ul class="breadcrumbs">
+                                <li>
+                                    <a href="clIndex.xhtml">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Write Report</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-contact-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div id="contact-form">
+                            <h:form id="ajax-contact-form" enctype="multipart/form-data">
+
+
+                                <div class="tbl1">
+                                    <table class="rtable">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2"><h2>COURSE MONITORING REPORT</h2></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Academic Session</td>
+                                                <td><h:inputText></h:inputText></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Course code + title</td>
+                                                <td><h:inputText></h:inputText></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Course Leader:</td>
+                                                <td><h:inputText></h:inputText></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Student count</td>
+                                                <td><h:inputText></h:inputText></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <div class="tbl2">
+                                    <table class="rtable">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="7"><h2>Statistical Data</h2></th>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                                <th>CW1</th>
+                                                <th>CW2</th>
+                                                <th>CW3</th>
+                                                <th>CW4</th>
+                                                <th>Exam</th>
+                                                <th>Overall</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Mean</td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Median</td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td> 
+                                            </tr>
+                                            <tr>
+                                                <td>Standard Deviation</td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="tbl3">
+                                    <table class="rtable">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="11"><h2>Grade Distribution Data</h2></th>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                                <th>0-9</th>
+                                                <th>10-19</th>
+                                                <th>20-29</th>
+                                                <th>30-39</th>
+                                                <th>40-49</th>
+                                                <th>50-59</th>
+                                                <th>60-69</th>
+                                                <th>70-79</th> 
+                                                <th>80-89</th>
+                                                <th>90+</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>CW1</td>
+                                                <td><h:inputText ></h:inputText></td>
+                                                <td><h:inputText ></h:inputText></td>
+                                                <td><h:inputText ></h:inputText></td>
+                                                <td><h:inputText ></h:inputText></td>
+                                                <td><h:inputText ></h:inputText></td>
+                                                <td><h:inputText ></h:inputText></td>
+                                                <td><h:inputText ></h:inputText></td>
+                                                <td><h:inputText ></h:inputText></td>
+                                                <td><h:inputText ></h:inputText></td>
+                                                <td><h:inputText ></h:inputText></td>
+                                            </tr>
+                                            <tr>
+                                                <td>CW2</td>
+                                                <td><h:inputText ></h:inputText></td>
+                                                <td><h:inputText ></h:inputText></td>
+                                                <td><h:inputText ></h:inputText></td>
+                                                <td><h:inputText ></h:inputText></td>
+                                                <td><h:inputText ></h:inputText></td>
+                                                <td><h:inputText ></h:inputText></td>
+                                                <td><h:inputText ></h:inputText></td>
+                                                <td><h:inputText ></h:inputText></td>
+                                                <td><h:inputText ></h:inputText></td>
+                                                <td><h:inputText ></h:inputText></td>
+                                            </tr>
+                                            <tr>
+                                                <td>CW3</td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                            </tr>
+                                            <tr>
+                                                <td>CW4</td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ex</td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Overall</td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                                <td><h:inputText></h:inputText></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h:inputTextarea value="#{reportBean.description}" p:placeholder="Description" />
+                                    </div>                                 
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <h:inputFile value="#{reportBean.image}" />
+                                    </div>                                 
+                                </div>
+
+                                <div class="row">
+
+
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <h:commandButton class="button" value="Create Report" action="#{reportBean.sendMail()}"/>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </h:form>
+
+
+
+
+                        </div>
+                    </div>
+               
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-area-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="footer-widget">
+                            <img class="fotter-logo" src="images/fotter-logo.png" alt="" />
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                                ipsum voluptas dolore temporibus? Minus commodi eum ipsa illum.
+                                Fugit cumque fuga.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-widget widget_nav_menu">
+                            <h4 class="footer-widget-title">
+                                Latest Post
+                            </h4>
+                            <ul>
+                                <li class="menu-item">
+                                    <a href="#"> HTML5 Template </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#"> Responsive Design </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#"> Clean Design </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#"> Multipurpose </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#"> Portfolio 4 Column</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#"> Masonry Portfolio </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-widget widget_nav_menu">
+                            <h4 class="footer-widget-title">
+                                Page
+                            </h4>
+                            <ul>
+                                <li class="menu-item">
+                                    <a href="#"> Home Page </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#"> Portfolio </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#"> Blog </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#"> 404 Pages </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#"> About Us</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#"> Contact Us </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">
+                                Contact Us
+                            </h4>
+                            <div class="footer-contact">
+                                34, Lorem Dolor, Amet Lorem, Ipsum Phone: 600 12003 45006 Fax:
+                                08010 12323 300456 Email: info@loremipsum.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-holder">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>
+                            2015 Â© All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Bootstrap core JavaScript
+          ================================================== -->
+        <!--  Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/superfish.js"></script>
+        <script src="js/jquery.easing.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/jquery.isotope.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.colorbox-min.js"></script>
+        <script src="js/jflickrfeed.min.js"></script>
+        <script src="js/jquery.fitvids.js"></script>
+        <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+        <script src="js/jquery.fractionslider.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </h:body>
+</html>

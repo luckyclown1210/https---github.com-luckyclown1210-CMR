@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/src/java/com/coursemonitor/entity/Staff.java</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/web/comment.xhtml</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/src/java/com/coursemonitor/controller/CourseLeaderBean.java</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/web/finalReport.xhtml</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/src/java/com/coursemonitor/entity/AssignCourse.java</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/src/java/com/coursemonitor/model/CourseDao.java</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/web/template/navBar.xhtml</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/web/template/navBarCM.xhtml</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/web/pvcIndex.xhtml</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/src/java/com/coursemonitor/model/StaffDao.java</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/web/addNew.xhtml</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/web/viewReport.xhtml</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/web/index.xhtml</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/src/java/com/coursemonitor/entity/Faculty.java</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/src/java/hibernate.cfg.xml</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/src/java/com/coursemonitor/entity/Report.java</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/web/guestIndex.xhtml</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/src/java/com/coursemonitor/entity/AssignCourse.hbm.xml</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/web/assignCourse.xhtml</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/src/java/com/coursemonitor/model/ManagementStaffDao.java</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/src/java/com/coursemonitor/model/AssignCourseDao.java</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/src/java/com/coursemonitor/filter/loginFilter.java</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/src/java/com/coursemonitor/model/ReportDao.java</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/web/viewFinalReport.xhtml</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/src/java/com/coursemonitor/model/HibernateUtil.java</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/src/java/com/coursemonitor/entity/AssignCourseId.java</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/web/clIndex.xhtml</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/web/login.xhtml</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/src/java/com/coursemonitor/controller/ReportBean.java</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/src/java/com/coursemonitor/controller/CourseBean.java</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/src/java/com/coursemonitor/entity/Report.hbm.xml</file>
+            <file>file:/C:/Users/Nghia/Downloads/CourseMonitorReport/web/writeReport.xhtml</file>
+        </group>
+    </open-files>
+</project-private>
